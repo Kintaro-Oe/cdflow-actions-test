@@ -1,0 +1,14 @@
+name: "test-cdflow"
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: mergermarket/cdflow-action@master
+
+      - run: cdflow --help
