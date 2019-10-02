@@ -7,10 +7,11 @@ on:
 
 jobs:
   build:
+    name: 'build'
     runs-on: ubuntu-latest
     steps:
-      - uses: mergermarket/cdflow-action@master
+      - name: Install cdflow
+        uses: mergermarket/cdflow-action@master
 
-      - run: cdflow --help
-
-
+      - name: execute cdflow help
+        run: cdflow --help
