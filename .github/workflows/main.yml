@@ -14,4 +14,6 @@ jobs:
         uses: mergermarket/cdflow-action@master
 
       - name: execute cdflow help
-        run: ls -l
+        run: |
+        ls -l
+        cdflow --help
