@@ -12,5 +12,3 @@ jobs:
       - uses: mergermarket/cdflow-action@master
 
       - run: cdflow --help
-
-
